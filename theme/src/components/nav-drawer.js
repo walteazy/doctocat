@@ -120,7 +120,7 @@ function PrimerNavItems({items}) {
           <Details key={index}>
             {({open, toggle}) => (
               <>
-                <summary onClick={toggle} style={{cursor: 'pointer'}}>
+                <summary onClick={toggle} onKeyDown={toggle} style={{cursor: 'pointer'}}>
                   <Box sx={{alignItems: 'center', justifyContent: 'space-between', display: 'flex'}}>
                     <Text>{item.title}</Text>
                     {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
